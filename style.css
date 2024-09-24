@@ -1,0 +1,371 @@
+/*------------------------------------*\
+  #CUSTOM-PROPERTIES
+\*------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  /* Font */
+  --font-primary: "Roboto", sans-serif;
+
+  /* Colors */
+  /* primary */
+  --colors-Tomato: hsl(4, 100%, 67%);
+  --colors-Tomato-Invalid: #ffcac7;
+
+  /* neutral */
+  --colors-Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --colors-Charcoal-Grey: hsl(235, 18%, 26%);
+  --colors-Grey: hsl(231, 7%, 60%);
+  --colors-White: hsl(0, 0%, 100%);
+}
+
+/*------------------------------------*\
+    #RESET
+  \*------------------------------------*/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: var(--font-primary);
+  scroll-behavior: smooth;
+  color: var(--colors-Dark-Slate-Grey);
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+/*------------------------------------*\
+    #COMPONENTS
+\*------------------------------------*/
+
+/*------------------------------------*\
+     #UTILITIES
+\*------------------------------------*/
+/***************\
+  #Mobile - 320px - XS
+  \***************/
+
+/****************\
+  #Tablet - 640px - S
+  \****************/
+
+@media (640px < width) {
+}
+
+/******************\
+  #Tablet L - 768px - M
+  \******************/
+
+@media (768px < width) {
+}
+
+/******************\
+  #Desktop - 1024px - L
+  \******************/
+
+@media (1024px < width) {
+}
+
+/*********************\
+  #Desktop XL - 1280px - XL
+  \*********************/
+
+@media (1280px < width) {
+}
+
+/*************\
+  #4K - 1536px - XXL
+  \*************/
+
+@media (1600px < width) {
+}
+
+/*------------------------------------*\
+  #SITE-STYLES
+  \*------------------------------------*/
+
+/***************\
+  #Mobile - 320px - XS
+\***************/
+.container__succes,
+.container__form {
+  background-color: var(--colors-White);
+  /* esta medida cambiara en desktop */
+  width: 375px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__succes {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 9.3rem 1.5rem;
+}
+
+
+.container__succes--disabled,
+.container__form--disabled {
+  display: none;
+}
+
+.data__text {
+  line-height: 1.5rem;
+  margin-bottom: 1.4rem;
+}
+.data__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.27rem;
+}
+
+
+.data__items {
+  display: flex;
+  align-items: start;
+  line-height: 1.5rem;
+  margin-bottom: .7rem;
+}
+
+.data__items::before {
+content: url("./assets/images/icon-list.svg");
+vertical-align: middle;
+margin-right: .5rem;
+}
+
+.form__data {
+  margin: 20px 24px 0;
+  align-self: self-start;
+}
+
+.form__image {
+  background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+  width: 375px;
+  height: 284px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.input--invalid {
+  border: 1px solid red;
+  background-color: var(--colors-Tomato-Invalid);
+  outline: 0;
+}
+
+.succes__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+  margin: 2.25rem 0 1.5rem;
+}
+
+.succes__text {
+  line-height: 1.45rem;
+}
+
+.succes__btn {
+  width: 18.75rem;
+  align-self: center;
+  margin-top: 16.5rem;
+  padding: 1.25rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--colors-Dark-Slate-Grey);
+  color: var(--colors-White);
+  font-weight: 700;
+}
+
+
+.valid__email {
+  display: none;
+  font-size: .75rem;
+  font-weight: 700;
+  margin-left: 42%;
+  color: var(--colors-Tomato);
+}
+
+form {
+  margin-top: 2rem;
+}
+footer {
+  background-color: var(--colors-Dark-Slate-Grey);
+  color: var(--colors-White);
+  font-size: .8rem;
+  text-align: center;
+  padding: 1rem 0;
+  line-height: 1.25rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--colors-White);
+  font-weight: 700;
+  font-style: italic;
+}
+
+input {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: 0;
+  outline: .1rem solid var(--colors-Grey);
+  padding: 1.1rem 1.75rem;
+  margin-top: 1rem;
+}
+
+
+
+
+input[type="submit"] {
+  margin-top: 1.5rem;
+  background-color: var(--colors-Dark-Slate-Grey);
+  font-weight: 600;
+  color: var(--colors-White);
+  outline: 0;
+
+}
+
+
+
+label {
+  display: inline;
+  font-size: .75rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: .5rem;
+
+}
+
+
+
+
+main {
+  background-color: var(--colors-Dark-Slate-Grey);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/****************\
+  #Tablet - 640px - S
+\****************/
+
+@media (640px < width) {
+}
+
+/******************\
+  #Tablet L - 768px - M
+\******************/
+
+@media (768px < width) {
+}
+
+/******************\
+  #Desktop - 1024px - L
+\******************/
+
+@media (1023px < width) {
+
+  .container__form {
+    width: 928px;
+    height: 642px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+  }
+
+  .container__succes {
+    width: 31.5rem;
+    height: 32.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem;
+    border-radius: 30px;
+  }
+
+  .container__succes--disabled,
+  .container__form--disabled {
+    display: none;
+  }
+
+  .form__data {
+    align-self: center;
+    width: 376px;
+    margin: 0 24px 0;
+  }
+
+ 
+
+  .form__image {
+    order: 1;
+    width: 400px;
+    height: 592px;
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+  
+  }
+
+
+
+  .succes__btn {
+    width: 100%;
+    align-self: center;
+    margin-top: 2.5rem;
+    padding: 1.25rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--colors-Dark-Slate-Grey);
+    color: var(--colors-White);
+    font-weight: 700;
+    transition: all 5s ease;
+  }
+  
+  .succes__btn:hover {
+    background: linear-gradient(to right, var(--colors-Tomato), #EF8F43);
+  }
+
+  .succes__title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .valid__email {
+    font-size: .75rem;
+    font-weight: 700;
+    margin-left: 50%;
+  }
+
+  
+
+  input[type="submit"]:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, var(--colors-Tomato), #EF8F43);
+  }
+  
+}
+
+/*********************\
+  #Desktop XL - 1280px - XL
+\*********************/
+
+@media (1280px < width) {
+}
+
+/*************\
+  #4K - 1536px - XXL
+\*************/
+
+@media (1600px < width) {
+}
