@@ -301,6 +301,10 @@ main {
     display: none;
   }
 
+  .data__title {
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+  }
   .form__data {
     align-self: center;
     width: 376px;
